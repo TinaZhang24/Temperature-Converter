@@ -7,6 +7,7 @@
  */
 function convertToCelsius(f) {
   // TODO
+  return Math.round((f - 32) / 1.8)
 }
 
 /**
@@ -24,6 +25,20 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
+  let message = "";
+  const numFahrenheit = f * 1;
+
+  if(numFahrenheit < 32){
+    message = "very cold";
+  }else if(numFahrenheit < 64){
+    message = "cold";
+  }else if(numFahrenheit < 86){
+    message = "warm";
+  }else if(numFahrenheit < 100){
+    message = "hot";
+  }else{
+    message = "very hot";
+  }
 }
 
 /**
@@ -32,6 +47,7 @@ function describeTemperature(f) {
  */
 function getRandomInt(limit) {
   // TODO
+  return Math.round(Math.random() * limit);
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
