@@ -39,6 +39,8 @@ function describeTemperature(f) {
   }else{
     message = "very hot";
   }
+
+  return message;
 }
 
 /**
